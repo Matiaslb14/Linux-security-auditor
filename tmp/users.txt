@@ -1,0 +1,2 @@
+postgres:x:114:118:PostgreSQL administrator:/var/lib/postgresql:/bin/bash
+juanito:x:1001:1001::/home/juanito:/bin/bash

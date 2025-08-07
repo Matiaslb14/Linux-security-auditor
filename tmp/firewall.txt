@@ -1,0 +1,1 @@
+./audit.sh: línea 30: ufw: orden no encontrada
