@@ -34,3 +34,27 @@ The result is a detailed report that allows quick identification of vulnerabilit
 ├── tmp/                   # Temporary files generated during the audit  
 
 └── reports/               # Final reports are stored here  
+
+⚙️ Requirements
+
+Linux (Kali Linux or other security-focused distribution recommended)
+
+Python 3.7+
+
+UFW installed (for firewall check)
+
+Execution permissions for Bash and Python scripts
+
+▶️ Usage
+
+Grant execution permissions to the main script:
+
+chmod +x audit.sh
+
+Run the audit:
+
+./audit.sh
+
+Check the generated report in:
+
+reports/audit_report.txt
