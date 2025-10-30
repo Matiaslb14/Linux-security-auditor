@@ -1,54 +1,74 @@
-# 🛡️ Linux Security Auditor
-Security auditing tool for Linux systems that automates the collection and analysis of critical configurations, generating comprehensive reports.
+# 🛡️ Linux Security Auditor  
+### (Auditor de Seguridad Linux)
 
-📌 Description
+---
 
-This project is a set of Bash and Python scripts that perform a complete security audit on Linux systems, checking:
+## 🧠 Overview / Descripción  
 
-Active services and potential security risks
+**EN:**  
+Security auditing tool for Linux systems that automates the collection and analysis of critical configurations, generating comprehensive reports for vulnerability detection and hardening.  
 
-Open and listening ports
+**ES:**  
+Herramienta de auditoría de seguridad para sistemas Linux que automatiza la recopilación y el análisis de configuraciones críticas, generando reportes completos para la detección de vulnerabilidades y el refuerzo del sistema.
 
-Users with shell access
+---
 
-Files with insecure permissions (777)
+## 📋 Description / Descripción Detallada  
 
-SSH root access configuration
+**EN:**  
+This project is a set of **Bash and Python scripts** that perform a complete security audit on Linux systems, checking:  
 
-Firewall (UFW) status
+- Active services and potential security risks  
+- Open and listening ports  
+- Users with shell access  
+- Files with insecure permissions (**777**)  
+- SSH root access configuration  
+- Firewall (**UFW**) status  
 
-The result is a detailed report that allows quick identification of vulnerabilities and insecure configurations in Linux environments.
+The result is a detailed report that allows quick identification of vulnerabilities and insecure configurations.  
 
-📂 Project Structure
+**ES:**  
+Este proyecto es un conjunto de **scripts en Bash y Python** que realiza una auditoría completa de seguridad en sistemas Linux, verificando:  
 
-├── audit.sh               # Main Bash script that runs the audit  
+- Servicios activos y posibles riesgos de seguridad  
+- Puertos abiertos y en escucha  
+- Usuarios con acceso a shell  
+- Archivos con permisos inseguros (**777**)  
+- Configuración de acceso SSH root  
+- Estado del firewall (**UFW**)  
 
-├── analyze_service.py     # Python script to analyze insecure services  
+El resultado es un reporte detallado que permite identificar rápidamente vulnerabilidades y configuraciones inseguras en entornos Linux.
 
-├── check_permissions.py   # Python script to detect files with 777 permissions  
+---
 
-├── report_generator.py    # Python script to generate audit reports  
+## 📂 Project Structure / Estructura del Proyecto  
 
-├── final_report.py        # (Optional) Script to consolidate reports  
+├── audit.sh # Main Bash script that runs the audit / Script principal Bash que ejecuta la auditoría
+├── analyze_service.py # Python script to analyze insecure services / Analiza servicios inseguros
+├── check_permissions.py # Detects files with 777 permissions / Detecta archivos con permisos 777
+├── report_generator.py # Generates audit reports / Genera reportes de auditoría
+├── final_report.py # (Optional) Consolidates all reports / Consolida reportes (opcional)
+├── tmp/ # Temporary files / Archivos temporales
+└── reports/ # Final audit reports / Reportes finales
 
-├── tmp/                   # Temporary files generated during the audit  
+---
 
-└── reports/               # Final reports are stored here  
+## ⚙️ Requirements / Requisitos  
 
-⚙️ Requirements
+| Requirement (EN) | Requisito (ES) |
+| ---------------- | -------------- |
+| Linux system (Kali, Ubuntu, Debian, etc.) | Sistema Linux (Kali, Ubuntu, Debian, etc.) |
+| Python 3.7+ | Python 3.7 o superior |
+| UFW installed (for firewall check) | UFW instalado (para verificación de firewall) |
+| Execution permissions for Bash and Python scripts | Permisos de ejecución para scripts Bash y Python |
 
-Linux (Kali Linux or other security-focused distribution recommended)
+---
 
-Python 3.7+
+## ▶️ Usage / Ejecución  
 
-UFW installed (for firewall check)
-
-Execution permissions for Bash and Python scripts
-
-▶️ Usage
-
-Grant execution permissions to the main script:
-
+**EN:**  
+Grant execution permissions to the main script:  
+bash
 chmod +x audit.sh
 
 Run the audit:
@@ -58,3 +78,42 @@ Run the audit:
 Check the generated report in:
 
 reports/audit_report.txt
+
+**ES:**
+Otorga permisos de ejecución al script principal:
+
+chmod +x audit.sh
+
+Ejecuta la auditoría:
+
+./audit.sh
+
+Consulta el reporte generado en:
+
+reports/audit_report.txt
+
+## 📸 Screenshots / Capturas  
+
+### 🔍 Running the Audit / Ejecutando la Auditoría  
+<p align="center">
+  <img src="images/audit_run.png" alt="Running Linux Security Audit Script" width="800">
+</p>
+
+---
+
+### 🧾 Generated Report / Reporte Generado  
+<p align="center">
+  <img src="images/audit_report_details.png" alt="Generated Security Audit Report" width="800">
+</p>
+
+
+📘 Notes / Notas
+
+EN:
+This project is part of the Linux Automation & Security Toolkit Series, focused on automation and auditing for system administrators and cybersecurity professionals.
+
+ES:
+Este proyecto forma parte de la serie Linux Automation & Security Toolkit, enfocada en automatización y auditoría para administradores de sistemas y profesionales de ciberseguridad.
+
+👨‍💻 Developed by / Desarrollado por Matías Lagos Barra — Cloud & DevSecOps Engineer
+
