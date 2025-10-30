@@ -96,14 +96,14 @@ reports/audit_report.txt
 
 ### 🔍 Running the Audit / Ejecutando la Auditoría  
 <p align="center">
-  <img src="images/audit_run.png" alt="Running Linux Security Audit Script" width="800">
+  <img src="images/audit_run.jpg" alt="Running Linux Security Audit Script" width="800">
 </p>
 
 ---
 
 ### 🧾 Generated Report / Reporte Generado  
 <p align="center">
-  <img src="images/audit_report_details.png" alt="Generated Security Audit Report" width="800">
+  <img src="images/audit_report_details.jpg" alt="Generated Security Audit Report" width="800">
 </p>
 
 
